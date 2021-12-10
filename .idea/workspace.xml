@@ -5,8 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67a362d-083b-4ece-a4f6-f5fb5e7060b6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/coffee/Coffee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/coffee/CoffeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/coffee/enums/Process.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/coffee/enums/ProductionArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/coffee/enums/RoastingPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/coffee/enums/Variety.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/common/BaseTimeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/grinder/Grinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/grinder/GrinderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/store/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/store/StoreRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/service/DiaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/DiaryApiContorller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/DiaryListResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/DiaryResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/DiarySaveRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/DiaryUpdateRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/CoffeeDiaryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/CoffeeDiaryApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/diary/Diary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/diary/Diary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/diary/DiaryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/diary/DiaryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/recipe/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/recipe/Recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/vue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/vue/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +52,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -32,11 +65,17 @@
     <option name="myId2FirstActivated">
       <map>
         <entry key="JPA Structure" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
         <entry key="JPA Structure" value="false" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -46,6 +85,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -54,6 +99,12 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="toy.first.coffeediary.web.dto" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
@@ -85,7 +136,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638939976109</updated>
-      <workItem from="1638939978637" duration="2079000" />
+      <workItem from="1638939978637" duration="5713000" />
+      <workItem from="1638947075449" duration="4078000" />
+      <workItem from="1638969101414" duration="4942000" />
+      <workItem from="1639017414656" duration="5306000" />
+      <workItem from="1639026721126" duration="5033000" />
+      <workItem from="1639100785068" duration="53000" />
+      <workItem from="1639109477183" duration="15548000" />
     </task>
     <servers />
   </component>
@@ -102,5 +159,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
