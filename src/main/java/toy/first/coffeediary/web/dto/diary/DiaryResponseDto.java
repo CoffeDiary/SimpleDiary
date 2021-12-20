@@ -1,4 +1,4 @@
-package toy.first.coffeediary.web.dto;
+package toy.first.coffeediary.web.dto.diary;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,6 +15,7 @@ public class DiaryResponseDto {
     private Recipe recipe;
     private User user;
     private boolean secret;
+
     public DiaryResponseDto(Diary diary){
         this.diaryId = diary.getDiaryId();
         this.title = diary.getTitle();

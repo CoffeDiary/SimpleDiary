@@ -5,7 +5,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import toy.first.coffeediary.domain.coffee.Coffee;
-import toy.first.coffeediary.domain.common.BaseTimeEntity;
+import toy.first.coffeediary.domain.base.BaseTimeEntity;
 import toy.first.coffeediary.domain.diary.Diary;
 import toy.first.coffeediary.domain.grinder.Grinder;
 import toy.first.coffeediary.domain.user.User;

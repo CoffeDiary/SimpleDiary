@@ -4,7 +4,7 @@ package toy.first.coffeediary.domain.diary;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import toy.first.coffeediary.domain.common.BaseTimeEntity;
+import toy.first.coffeediary.domain.base.BaseTimeEntity;
 import toy.first.coffeediary.domain.recipe.Recipe;
 import toy.first.coffeediary.domain.user.User;
 

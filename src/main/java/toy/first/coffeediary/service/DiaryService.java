@@ -5,10 +5,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import toy.first.coffeediary.domain.diary.Diary;
 import toy.first.coffeediary.domain.diary.DiaryRepository;
-import toy.first.coffeediary.web.dto.DiaryListResponseDto;
-import toy.first.coffeediary.web.dto.DiaryResponseDto;
-import toy.first.coffeediary.web.dto.DiarySaveRequestDto;
-import toy.first.coffeediary.web.dto.DiaryUpdateRequestDto;
+import toy.first.coffeediary.web.dto.diary.DiaryListResponseDto;
+import toy.first.coffeediary.web.dto.diary.DiaryResponseDto;
+import toy.first.coffeediary.web.dto.diary.DiarySaveRequestDto;
+import toy.first.coffeediary.web.dto.diary.DiaryUpdateRequestDto;
 import java.util.List;
 import java.util.stream.Collectors;
 

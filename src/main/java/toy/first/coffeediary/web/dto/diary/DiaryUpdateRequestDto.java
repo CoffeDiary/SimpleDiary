@@ -1,4 +1,4 @@
-package toy.first.coffeediary.web.dto;
+package toy.first.coffeediary.web.dto.diary;
 
 import lombok.Builder;
 import lombok.Getter;

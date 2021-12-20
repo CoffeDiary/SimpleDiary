@@ -1,4 +1,4 @@
-package toy.first.coffeediary.domain.common;
+package toy.first.coffeediary.domain.base;
 
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;
