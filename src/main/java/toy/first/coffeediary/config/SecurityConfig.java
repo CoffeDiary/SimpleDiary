@@ -13,7 +13,6 @@ import toy.first.coffeediary.config.jwt.JwtAuthenticationFilter;
 import toy.first.coffeediary.config.jwt.JwtAuthorizationFilter;
 import toy.first.coffeediary.domain.user.UserRepository;
 
-
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
@@ -42,7 +41,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .addFilter(new JwtAuthorizationFilter(authenticationManager(), userRepository))
                 .authorizeRequests()
                 .antMatchers("/api/**")
-                .access("hasRole('ROLE_USER') or hasRole('ROLE_MANAGER') or hasRole('ROLE_ADMIN')")
+                .access("hasRole('ROLE_ADMIN')")
                 .anyRequest().permitAll();
     }
 }

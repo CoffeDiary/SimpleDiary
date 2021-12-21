@@ -65,17 +65,16 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 	@Override
 	protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain,
 			Authentication authResult) throws IOException, ServletException {
-		
+
 		PrincipalDetails principalDetailis = (PrincipalDetails) authResult.getPrincipal();
-		
+
 		String jwtToken = JWT.create()
 				.withSubject(principalDetailis.getUsername())
-				.withExpiresAt(new Date(System.currentTimeMillis()+ toy.first.coffeediary.config.jwt.JwtProperties.EXPIRATION_TIME))
+				.withExpiresAt(new Date(System.currentTimeMillis() + toy.first.coffeediary.config.jwt.JwtProperties.EXPIRATION_TIME))
 				.withClaim("id", principalDetailis.getUser().getUserId())
 				.withClaim("username", principalDetailis.getUser().getUserName())
 				.sign(Algorithm.HMAC512(toy.first.coffeediary.config.jwt.JwtProperties.SECRET));
 		System.out.println("jwtToken = " + jwtToken);
-		response.addHeader(toy.first.coffeediary.config.jwt.JwtProperties.HEADER_STRING, toy.first.coffeediary.config.jwt.JwtProperties.TOKEN_PREFIX+jwtToken);
+		response.addHeader(toy.first.coffeediary.config.jwt.JwtProperties.HEADER_STRING, toy.first.coffeediary.config.jwt.JwtProperties.TOKEN_PREFIX + jwtToken);
 	}
-	
 }

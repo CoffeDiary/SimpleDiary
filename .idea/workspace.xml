@@ -5,48 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a67a362d-083b-4ece-a4f6-f5fb5e7060b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/CorsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/auth/PrincipalDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/auth/PrincipalDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/jwt/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/jwt/JwtAuthorizationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/jwt/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/service/RecipeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/RecipeApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/UserApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/login/LoginRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/recipe/RecipeListResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/recipe/RecipeResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/recipe/RecipeSaveRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/recipe/RecipeUpdateRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/user/UserJoinRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/user/UserResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/user/UserUpdateRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/CoffeeDiaryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/CoffeeDiaryApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/common/BaseTimeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/base/BaseTimeEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/diary/Diary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/diary/Diary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/recipe/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/recipe/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/service/DiaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/service/DiaryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/DiaryApiContorller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/DiaryApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/DiaryListResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/diary/DiaryListResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/DiaryResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/diary/DiaryResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/DiarySaveRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/diary/DiarySaveRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/DiaryUpdateRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/diary/DiaryUpdateRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/jwt/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/jwt/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/jwt/JwtAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/jwt/JwtAuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +153,8 @@
       <workItem from="1639100785068" duration="53000" />
       <workItem from="1639109477183" duration="37482000" />
       <workItem from="1639719824643" duration="9048000" />
-      <workItem from="1639812804988" duration="27204000" />
+      <workItem from="1639812804988" duration="30211000" />
+      <workItem from="1640045222556" duration="7244000" />
     </task>
     <servers />
   </component>
