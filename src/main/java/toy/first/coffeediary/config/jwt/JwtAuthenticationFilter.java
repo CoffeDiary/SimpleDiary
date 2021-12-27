@@ -76,5 +76,6 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 				.sign(Algorithm.HMAC512(toy.first.coffeediary.config.jwt.JwtProperties.SECRET));
 		System.out.println("jwtToken = " + jwtToken);
 		response.addHeader(toy.first.coffeediary.config.jwt.JwtProperties.HEADER_STRING, toy.first.coffeediary.config.jwt.JwtProperties.TOKEN_PREFIX + jwtToken);
+		response.getWriter().write(toy.first.coffeediary.config.jwt.JwtProperties.TOKEN_PREFIX + jwtToken);
 	}
 }

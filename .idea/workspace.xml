@@ -4,9 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a67a362d-083b-4ece-a4f6-f5fb5e7060b6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/CorsConfig.java" afterDir="false" />
+    <list default="true" id="c56e9f4a-99b9-4eca-b04b-30e89a71425b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/jwt/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/jwt/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/build/check-versions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/build/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/build/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/build/vue-loader.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/build/webpack.base.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/build/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/build/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/config/dev.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/config/prod.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/vue-front/static/.gitkeep" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
