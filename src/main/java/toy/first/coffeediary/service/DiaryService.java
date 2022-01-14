@@ -38,7 +38,6 @@ public class DiaryService {
         Optional<Recipe> recipe = recipeRepository.findById(recipeId);
         Optional<Diary> diary = diaryRepository.findById(diaryId);
         Optional<User> user = userRepository.findById(requestDto.getUserId());
-        recipe.get().setDiary(diary.get());
         recipe.get().setUser(user.get());
         diary.get().setRecipe(recipe.get());
         diary.get().setUser(user.get());

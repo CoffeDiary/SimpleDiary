@@ -28,10 +28,6 @@ public class Recipe extends BaseTimeEntity {
     @JoinColumn(name = "user_id") // 데이터 베이스의 컬럼과 연결 userId == user_id
     private User user;
 
-    @JsonIgnore
-    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "diary_id")
-    Diary diary;
     /**
      * 추후 개발할 내용들
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)

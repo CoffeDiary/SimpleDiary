@@ -5,7 +5,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import toy.first.coffeediary.config.auth.PrincipalDetails;
 import toy.first.coffeediary.service.DiaryService;
-import toy.first.coffeediary.service.RecipeService;
 import toy.first.coffeediary.service.UserService;
 import toy.first.coffeediary.web.dto.diary.DiaryListResponseDto;
 import toy.first.coffeediary.web.dto.diary.DiaryResponseDto;
