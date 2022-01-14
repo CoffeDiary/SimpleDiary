@@ -1,5 +1,6 @@
 package toy.first.coffeediary.domain.user;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -29,9 +30,11 @@ public class User {
     private String eMail;
     private String roles;
     @OneToMany(mappedBy = "user")
+    @JsonManagedReference
     private List<Diary> diaries = new ArrayList<>();
 
     @OneToMany(mappedBy = "user")
+    @JsonManagedReference
     private List<Recipe> recipes = new ArrayList<>();
 
     @Builder

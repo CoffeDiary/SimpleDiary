@@ -16,9 +16,6 @@ public class DiaryListResponseDto {
     private String content;
     private LocalDateTime modifiedDate;
     private LocalDateTime createdDate;
-
-    private User user;
-    private Recipe recipe;
     private boolean secret;
 
     public DiaryListResponseDto(Diary entity) {
@@ -27,8 +24,6 @@ public class DiaryListResponseDto {
         this.content = entity.getContent();
         this.createdDate = entity.getCreatedDate();
         this.modifiedDate = entity.getModifiedDate();
-        this.user = entity.getUser();
-        this.recipe =entity.getRecipe();
         this.secret = entity.isSecret();
     }
 }

@@ -1,5 +1,6 @@
 package toy.first.coffeediary.domain.recipe;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Builder;
 import lombok.Getter;
@@ -21,6 +22,7 @@ public class Recipe extends BaseTimeEntity {
     private Long recipeId;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @JsonBackReference
     @JoinColumn(name = "user_id") // 데이터 베이스의 컬럼과 연결 userId == user_id
     private User user;
 

@@ -1,6 +1,7 @@
 package toy.first.coffeediary.domain.diary;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,6 +20,7 @@ public class Diary extends BaseTimeEntity {
     private Long diaryId;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @JsonBackReference
     @JoinColumn(name = "user_id") // 데이터 베이스의 컬럼과 연결 userId == user_id
     private User user;
 

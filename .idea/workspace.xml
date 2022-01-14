@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c56e9f4a-99b9-4eca-b04b-30e89a71425b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/auth/PrincipalDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/auth/PrincipalDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/jwt/JwtAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/jwt/JwtAuthorizationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/service/DiaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/service/DiaryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/DiaryApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/DiaryApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/UserApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/UserApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/diary/DiarySaveRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/diary/DiarySaveRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/diary/Diary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/diary/Diary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/recipe/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/recipe/Recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/domain/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/diary/DiaryListResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/diary/DiaryListResponseDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +160,7 @@
       <workItem from="1640739214860" duration="3400000" />
       <workItem from="1640758236751" duration="670000" />
       <workItem from="1641727184226" duration="601000" />
-      <workItem from="1642122723553" duration="1452000" />
+      <workItem from="1642122723553" duration="5212000" />
     </task>
     <servers />
   </component>
