@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c56e9f4a-99b9-4eca-b04b-30e89a71425b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/auth/PrincipalDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/auth/PrincipalDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/jwt/JwtAuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/config/jwt/JwtAuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/service/DiaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/service/DiaryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/DiaryApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/DiaryApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/UserApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/UserApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/diary/DiarySaveRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/toy/first/coffeediary/web/dto/diary/DiarySaveRequestDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +88,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="DatabaseDriversLRU" value="h2" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -102,6 +107,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -139,7 +145,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a67a362d-083b-4ece-a4f6-f5fb5e7060b6" name="Changes" comment="" />
+      <changelist id="c56e9f4a-99b9-4eca-b04b-30e89a71425b" name="Changes" comment="" />
       <created>1638939976109</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -154,6 +160,10 @@
       <workItem from="1639719824643" duration="9048000" />
       <workItem from="1639812804988" duration="30211000" />
       <workItem from="1640045222556" duration="8302000" />
+      <workItem from="1640739214860" duration="3400000" />
+      <workItem from="1640758236751" duration="670000" />
+      <workItem from="1641727184226" duration="601000" />
+      <workItem from="1642122723553" duration="1452000" />
     </task>
     <servers />
   </component>

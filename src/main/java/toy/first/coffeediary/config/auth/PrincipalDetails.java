@@ -1,25 +1,19 @@
 package toy.first.coffeediary.config.auth;
 
-
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import toy.first.coffeediary.domain.user.User;
-
 import java.util.ArrayList;
 import java.util.Collection;
 
 public class PrincipalDetails implements UserDetails {
-
 	private User user;
-
     public PrincipalDetails(User user){
         this.user = user;
     }
-
     public User getUser() {
 		return user;
 	}
-
     @Override
     public String getPassword() {
         return user.getPassword();

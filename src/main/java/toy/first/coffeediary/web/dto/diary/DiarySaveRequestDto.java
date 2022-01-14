@@ -13,19 +13,32 @@ public class DiarySaveRequestDto {
     private boolean secret;
     private String title;
     private String content;
+    private float coffeeAmount;
+    private int grindingPoint;
+    private int waterDegree;
+    private int waterAmount;
 
     @Builder
-    public DiarySaveRequestDto(boolean secret,String title, String content){
+    public DiarySaveRequestDto(boolean secret,String title, String content ,float coffeeAmount, int grindingPoint, int waterAmount, int waterDegree){
         this.secret = secret;
         this.title = title;
         this.content = content;
+        this.waterAmount = waterAmount;
+        this.waterDegree = waterDegree;
+        this.grindingPoint = grindingPoint;
+        this.coffeeAmount = coffeeAmount;
     }
 
-    public Diary toEntity(){
+    public Diary toDiaryEntity(){
         return Diary.builder()
                 .title(title)
                 .content(content)
                 .secret(secret)
+                .build();
+    }
+
+    public Recipe toRecipeEntity(){
+        return Recipe.builder()
                 .build();
     }
 }

@@ -1,8 +1,11 @@
 package toy.first.coffeediary.web;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
+import toy.first.coffeediary.config.auth.PrincipalDetails;
 import toy.first.coffeediary.service.DiaryService;
+import toy.first.coffeediary.service.UserService;
 import toy.first.coffeediary.web.dto.diary.DiaryListResponseDto;
 import toy.first.coffeediary.web.dto.diary.DiaryResponseDto;
 import toy.first.coffeediary.web.dto.diary.DiarySaveRequestDto;
@@ -14,12 +17,14 @@ import java.util.List;
 @RestController
 @RequestMapping("api/diary")
 public class DiaryApiController {
-
+    private final UserService userService;
     private final DiaryService diaryService;
 
     @PostMapping
-    public Long save(@RequestBody DiarySaveRequestDto requestDto){
-
+    public Long save(@RequestBody DiarySaveRequestDto requestDto, Authentication authentication){
+        PrincipalDetails principal = (PrincipalDetails) authentication.getPrincipal();
+        //
+        //
         return diaryService.save(requestDto);
     }
 

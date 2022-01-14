@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import toy.first.coffeediary.domain.diary.Diary;
 import toy.first.coffeediary.domain.diary.DiaryRepository;
+import toy.first.coffeediary.domain.recipe.RecipeRepository;
 import toy.first.coffeediary.web.dto.diary.DiaryListResponseDto;
 import toy.first.coffeediary.web.dto.diary.DiaryResponseDto;
 import toy.first.coffeediary.web.dto.diary.DiarySaveRequestDto;
@@ -16,10 +17,14 @@ import java.util.stream.Collectors;
 @Service
 public class DiaryService {
     private final DiaryRepository diaryRepository;
+    private final RecipeRepository recipeRepository;
 
     @Transactional
     public Long save(DiarySaveRequestDto requestDto){
-        return diaryRepository.save(requestDto.toEntity()).getDiaryId();
+        recipeRepository.save(requestDto.toRecipeEntity());
+        Long diaryId = diaryRepository.save(requestDto.toDiaryEntity()).getDiaryId();
+
+        return diaryId;
     }
 
     @Transactional

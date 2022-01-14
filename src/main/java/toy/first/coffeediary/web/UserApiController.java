@@ -16,8 +16,6 @@ public class UserApiController {
     @GetMapping
     public UserResponseDto user(Authentication authentication) {
         PrincipalDetails principal = (PrincipalDetails) authentication.getPrincipal();
-        UserResponseDto userResponseDto = userService.findById(principal.getUser().getUserId());
-        return userResponseDto;
+        return userService.findById(principal.getUser().getUserId());
     }
-
 }
