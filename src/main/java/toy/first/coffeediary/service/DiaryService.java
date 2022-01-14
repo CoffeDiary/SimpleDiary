@@ -5,12 +5,16 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import toy.first.coffeediary.domain.diary.Diary;
 import toy.first.coffeediary.domain.diary.DiaryRepository;
+import toy.first.coffeediary.domain.recipe.Recipe;
 import toy.first.coffeediary.domain.recipe.RecipeRepository;
+import toy.first.coffeediary.domain.user.User;
+import toy.first.coffeediary.domain.user.UserRepository;
 import toy.first.coffeediary.web.dto.diary.DiaryListResponseDto;
 import toy.first.coffeediary.web.dto.diary.DiaryResponseDto;
 import toy.first.coffeediary.web.dto.diary.DiarySaveRequestDto;
 import toy.first.coffeediary.web.dto.diary.DiaryUpdateRequestDto;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
@@ -18,12 +22,20 @@ import java.util.stream.Collectors;
 public class DiaryService {
     private final DiaryRepository diaryRepository;
     private final RecipeRepository recipeRepository;
+    private final UserRepository userRepository;
 
     @Transactional
     public Long save(DiarySaveRequestDto requestDto){
-        recipeRepository.save(requestDto.toRecipeEntity());
+        System.out.println("requestDto = " + requestDto);
+        Long recipeId = recipeRepository.save(requestDto.toRecipeEntity()).getRecipeId();
         Long diaryId = diaryRepository.save(requestDto.toDiaryEntity()).getDiaryId();
-
+        Optional<Recipe> recipe = recipeRepository.findById(recipeId);
+        Optional<Diary> diary = diaryRepository.findById(diaryId);
+        Optional<User> user = userRepository.findById(requestDto.getUserId());
+        recipe.get().setDiary(diary.get());
+        recipe.get().setUser(user.get());
+        diary.get().setRecipe(recipe.get());
+        diary.get().setUser(user.get());
         return diaryId;
     }
 

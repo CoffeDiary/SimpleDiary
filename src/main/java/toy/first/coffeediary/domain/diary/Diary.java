@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import toy.first.coffeediary.domain.base.BaseTimeEntity;
 import toy.first.coffeediary.domain.recipe.Recipe;
 import toy.first.coffeediary.domain.user.User;
@@ -12,6 +13,7 @@ import toy.first.coffeediary.domain.user.User;
 import javax.persistence.*;
 
 @Getter
+@Setter
 @NoArgsConstructor
 @Entity
 public class Diary extends BaseTimeEntity {
