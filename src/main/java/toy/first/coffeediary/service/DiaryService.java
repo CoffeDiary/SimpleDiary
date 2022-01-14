@@ -17,6 +17,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+/**
+ * 자바 주석을 달면 스웨거에 적용이 될까?
+ */
 @RequiredArgsConstructor
 @Service
 public class DiaryService {
@@ -26,6 +29,9 @@ public class DiaryService {
 
     @Transactional
     public Long save(DiarySaveRequestDto requestDto){
+        /**
+         * 자바 주석을 달면 스웨거에 적용이 될까?
+         */
         System.out.println("requestDto = " + requestDto);
         Long recipeId = recipeRepository.save(requestDto.toRecipeEntity()).getRecipeId();
         Long diaryId = diaryRepository.save(requestDto.toDiaryEntity()).getDiaryId();
