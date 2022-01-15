@@ -13,7 +13,6 @@ public class DiaryResponseDto {
     private String title;
     private String content;
     private Recipe recipe;
-    private User user;
     private boolean secret;
 
     public DiaryResponseDto(Diary diary){
@@ -22,6 +21,5 @@ public class DiaryResponseDto {
         this.secret = diary.isSecret();
         this.recipe = diary.getRecipe();
         this.content = diary.getContent();
-        this.user = diary.getUser();
     }
 }
