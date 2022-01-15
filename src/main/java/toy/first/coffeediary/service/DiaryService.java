@@ -1,8 +1,10 @@
 package toy.first.coffeediary.service;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import toy.first.coffeediary.config.auth.PrincipalDetails;
 import toy.first.coffeediary.domain.diary.Diary;
 import toy.first.coffeediary.domain.diary.DiaryRepository;
 import toy.first.coffeediary.domain.recipe.Recipe;
@@ -71,5 +73,13 @@ public class DiaryService {
         return diaryRepository.findAllDesc().stream()
                 .map(DiaryListResponseDto::new)
                 .collect(Collectors.toList());
+    }
+
+    @Transactional(readOnly = true)
+    public List<Diary> myDiary(Authentication authentication) {
+        PrincipalDetails principal = (PrincipalDetails) authentication.getPrincipal();
+
+        Optional<User> userOptional = userRepository.findById(principal.getUser().getUserId());
+        return userOptional.get().getDiaries();
     }
 }
